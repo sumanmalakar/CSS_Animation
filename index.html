@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation and Trasition...</title>
+  <style>
+    .container{
+      background-color: red;
+      height: 455px;
+    }
+    .box{
+      /* border: 3px solid blue; */
+      /* display: inline-block; */
+      /* transform: translate(134px , 56px) rotate(45deg);*/
+      /* transform-origin: 0;  */
+      /* transform: skew(10deg,10deg); */
+      /* transform: rotateY(405deg); */
+    }
+    img{
+      width: 145px;
+      transition-property: width;
+      transition-duration: 1s;
+      transition-timing-function: ease-in;
+    }
+    /* img:hover{
+      width: 455px;
+    }
+    */
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+    <img id="myImage" src="../img/3.jpg " alt="">
+    <button id="btn">Toggle</button>
+    </div>
+  </div>
+</body>
+
+  <script>
+    myImage.style.width === '146px';
+  btn.addEventListener("click", ()=>{
+    if(myImage.style.width === '546px'){
+      myImage.style.width = "146px"
+    }
+    else  if(myImage.style.width === '146px'){
+      myImage.style.width = "146px"
+    }
+    
+  })
+  </script>
+  
+</html>
